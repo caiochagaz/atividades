@@ -1,0 +1,25 @@
+{
+  "Livros": [
+    {
+      "id": 4,
+      "nome": "A arte da Guerra",
+      "autor": "Sun TZU",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41Z+Iod3PDL._SY344_BO1,204,203,200_.jpg",
+      "gender": null
+    },
+    {
+      "id": 5,
+      "nome": "Breve História sobre quase tudo",
+      "autor": "Stephen Hawking",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51FBILW8cWS._SX346_BO1,204,203,200_.jpg",
+      "gender": null
+    },
+    {
+      "id": 6,
+      "nome": "Metamorfose",
+      "autor": "Frans Kafka",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/41GSDX15NYL._SX332_BO1,204,203,200_.jpg",
+      "gender": null
+    }
+  ]
+}

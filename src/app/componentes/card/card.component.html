@@ -1,0 +1,21 @@
+<div class="container mt-3">
+  <div class="row">
+      <div class="col-3 mx-5 my-3 bg-light text-center w-25 rounded card d-flex align-items-stretch" style="border-radius: black 1px 1px 13px 3px;"
+          *ngFor="let item of Livros">
+          <div class="g-0">
+              <p class="card-text" style="font-weight: 900; color:black">
+                  <small>#{{item.id | number: '2.0-0'}}</small></p>
+              <div>
+                  <img src="{{item.foto}}" class="img-fluid rounded-start minhaimagem" style="width: 150px;">
+              </div>
+              <div>
+                  <div class="card-body">
+                      <h5 class="card-title text-danger">{{item.nome}}</h5>
+                      <p class="card-text text-dark">{{item.autor}}</p>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

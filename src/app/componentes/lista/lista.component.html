@@ -1,0 +1,62 @@
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome do Livro</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Excluir</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of Livros">
+      <th>{{ item.id }}</th>
+      <td>{{ item.nome }}</td>
+      <td>{{ item.autor }}</td>
+      <td>{{ item.foto }}</td>
+      <td>
+        <button
+          class="btn btn-success"
+          (click)="editar(item.id)"
+        >
+          Editar
+        </button>
+      </td>
+      <td>
+        <button
+          class="btn btn-primary"
+          (click)="mostraModal(item.id)"
+        >
+          Excluir
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="isModal">
+<div class="minhaModal">
+
+  <div class="tituloModal bg-success text-white">
+    <h5>Aviso</h5>
+  </div>
+  <h6 class="mb-4">confirma essa operação</h6>
+  <button class="btn btn-outline-success mx-1" (click)="cancelarAcao()">cancelar</button>
+  <button class="btn btn-outline-success mx-1" (click)="confirmarAcao()">confirmar</button>
+</div>
+</div>
+
+<!-- <div *ngIf="">
+  <div class="minhaModal2">
+
+    <div class="tituloModal bg-success text-white">
+      <h5>aviso</h5>
+    </div>
+    <h6 class="my-4">confirma essa operação</h6>
+    <button class="btn btn-outline-success mx-1" (click)="cancelarAcao()">cancelar</button>
+    <button class="btn btn-outline-success mx-1" (click)="confirmarAcao()">confirmar</button>
+  </div>
+  </div> -->
